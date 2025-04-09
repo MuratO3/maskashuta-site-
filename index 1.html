@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Стихи Муратбека</title>
+  <style>
+    body { background-color: #111; color: #fff; font-family: sans-serif; margin: 0; padding: 0; }
+    header, footer { background: #222; text-align: center; padding: 1em; }
+    nav a { color: #ddd; margin: 0 1em; text-decoration: none; }
+    section { max-width: 800px; margin: auto; padding: 2em; }
+    h2 { border-bottom: 1px solid #444; padding-bottom: 0.5em; }
+    .poem-title { color: #ffcc00; cursor: pointer; margin-top: 1.5em; }
+    .poem-body { display: none; margin-top: 0.5em; white-space: pre-wrap; }
+  </style>
+  <script>
+    function togglePoem(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Уббиниязов Муратбек</h1>
+    <nav>
+      <a href="#about">Обо мне</a>
+      <a href="#poems">Стихи</a>
+      <a href="#songs">Песни</a>
+      <a href="#pdf">PDF-сборник</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+<section id="about">
+  <h2>Обо мне</h2>
+  <p>Я — поэт из Нукуса. Пишу с 16 лет. Мои стихи — это внутренний путь, боль, поиск и надежда.</p>
+</section>
+<section id="poems">
+  <h2>Стихи</h2>
+
+  <div class="poem-title" onclick="togglePoem('poem0')">Маска шута (11 августа 2019)</div>
+  <div class="poem-body" id="poem0">Я вечно играл — и снова играю,
+Смеюсь, когда сердце сгорает дотла.
+Я — шут, что под маской своей зарывает
+Боль, что из сердца струится со зла.
+
+В глазах моих — искры, но не от смеха,
+А от боли, что выжгла мне душу давно.
+Я в этой роли нашёл передышку
+От мира, где всё решает одно.
+
+Уббиниязов Муратбек</div>
+    
+  <div class="poem-title" onclick="togglePoem('poem1')">Перед судьбой (13 сентября 2019)</div>
+  <div class="poem-body" id="poem1">Стою перед судьбой, как перед судом,
+Готов принять удар, пусть будет больно.
+Я не прошу пощады — лишь одно:
+Оставь мне свет, не погаси невольно.
+
+Пускай душа моя истёрта в пыль,
+Я встану вновь, пускай и на коленях.
+И если вдруг меня настигнет быль —
+Я не отдам свой свет в её владенье.
+
+Уббиниязов Муратбек</div>
+    </section>
+<section id="songs">
+  <h2>Песни</h2>
+  <p><em>Скоро...</em></p>
+</section>
+
+<section id="pdf">
+  <h2>PDF-сборник</h2>
+  <p><em>Скоро...</em></p>
+</section>
+
+<section id="contact">
+  <h2>Контакты</h2>
+  <p>Instagram: <a href="https://instagram.com/a.k_murat03" target="_blank">@a.k_murat03</a></p>
+</section>
+
+  <footer>
+    <p>© Уббиниязов Муратбек, 2025</p>
+  </footer>
+</body>
+</html>
